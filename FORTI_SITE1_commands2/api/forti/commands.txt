@@ -1,0 +1,14 @@
+post---exec---{"url":"/dvmdb/adom/root/workspace/lock"}
+post---exec---{"url":"/dvmdb/adom/root/workspace/lockinfo"}
+post---get---{"filter":["name","==","test_1"],"url":"/pm/config/adom/root/obj/firewall/address/test_1"}
+post---get---{"filter":["name","==","testgroup_1"],"url":"/pm/config/adom/root/obj/firewall/addrgrp"}
+post---add---{"data":{"name":"test_2","subnet":"10.10.10.2/32","type":"ipmask"},"url":"/pm/config/adom/root/obj/firewall/address/"}
+post---add---{"data":{"name":"test_3","start-ip":"10.10.10.31","end-ip":"10.10.10.39","type":"iprange"},"url":"/pm/config/adom/root/obj/firewall/address/"}
+post---add---{"data":{"name":"test_4","fqdn":"test_4.com","type":"fqdn"},"url":"/pm/config/adom/root/obj/firewall/address/"}
+post---add---{"data":["test_2"],"url":"/pm/config/adom/root/obj/firewall/addrgrp/testgroup_1/member"}
+post---add---{"data":["test_3"],"url":"/pm/config/adom/root/obj/firewall/addrgrp/testgroup_1/member"}
+post---add---{"data":["test_4"],"url":"/pm/config/adom/root/obj/firewall/addrgrp/testgroup_1/member"}
+post---exec---{"url":"/dvmdb/adom/root/workspace/commit"}
+post---get---{"filter":["name","==","testgroup_1"],"url":"/pm/config/adom/root/obj/firewall/addrgrp"}
+post---exec---{"url":"/dvmdb/adom/root/workspace/unlock"}
+post---exec---{"url":"/dvmdb/adom/root/workspace/lockinfo"}
