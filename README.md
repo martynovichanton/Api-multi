@@ -3,9 +3,9 @@
 ## Execute multiple API commands on multiple devices
 
 ## Running the commands
-python gettoken_f5.py
-python gettoken_forti.py
-python api_multi.py FOLDER_NAME
+python gettoken_f5.py  
+python gettoken_forti.py  
+python api_multi.py FOLDER_NAME  
 
 ## Features
 1. Run multiple commands on multiple devices
