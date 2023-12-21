@@ -1,4 +1,4 @@
-# API MULTI ASYNC
+# API MULTI
 
 ## Execute multiple API commands on multiple devices
 
