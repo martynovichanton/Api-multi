@@ -1,4 +1,4 @@
-# API MULTI
+# API MULTI ASYNC
 
 ## Execute multiple API commands on multiple devices
 
@@ -11,5 +11,5 @@ python api_multi.py FOLDER_NAME
 3. Flexible and supports multiple devices and commands based on the required set
 4. Log all commands and output to the file per device
 5. General log to track the process
-6. Support for multithreading per set directory
+6. Support for multithreading for all commands per device
 
